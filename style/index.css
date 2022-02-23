@@ -6,27 +6,80 @@
     max-width:100%;
 }
 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /*Navigation Button*/
 
 body{
-    background-color: cadetblue;
+    background-color:#F2E6DD ;
+    background-size: auto;
+    background-repeat: repeat;
 }
 
 header{
-    background-color: cornflowerblue;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 200%;
+    background-color: #E2D3C7;
+    padding: 1%;
     
 }
 h1 {
     padding: 1%;
     position: relative;
-    bottom: 30px
+    bottom: 10px
 }
 nav{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 30px
+    top: 5px
 }
 
 /*top section*/
@@ -38,14 +91,33 @@ nav{
 }
 
 .image-button{
-    background-image: url('https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68');
+    background-image: url('https://images.pexels.com/photos/4721999/pexels-photo-4721999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    font-family: 'Merriweather', serif;
     font-size:large;
+    object-fit: scale-down;
     width:600px;
     height:400px;
 }
+
+.image-button h1 {
+    background-color: #BDA490;
+    margin: 0 auto;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5%
+}
+
+.image-button a {
+    background-color: #f7efe8;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1% 15%;
+    margin-top: auto;
+}
+
 
 
 
@@ -69,11 +141,19 @@ footer{
 }
 
 .element{
-text-align: center;
+    text-align: center;
+    
+}
+.element img{
+    width: 300px;
+    height:300px;
+    object-fit: cover;
 }
 
 button{
-background-color: white;
+background-color: rgb(189, 175, 151);
+font-family: 'Oswald', sans-serif;
+font-stretch: condensed;
 color: black;
 border:black solid 1px;
 padding: 5px 10px;
